@@ -25,6 +25,6 @@ Clash 自用规则备份
 
 **3.参考示例**
 
-![Image text](https://github.com/PANGPANGDigital/ClashRlue_Backup/blob/main/images/%E5%88%86%E6%B5%81%E5%9B%BE.png)
-
 ![Image text](https://github.com/PANGPANGDigital/ClashRlue_Backup/blob/main/images/%E8%82%A5%E7%BE%8A%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2.png)
+
+![Image text](https://github.com/PANGPANGDigital/ClashRlue_Backup/blob/main/images/%E5%88%86%E6%B5%81%E5%9B%BE.png)
