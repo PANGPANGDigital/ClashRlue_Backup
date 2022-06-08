@@ -8,9 +8,9 @@ Clash 自用规则备份
 
   服务器用别人搭建好的（因为前端一般不支持自定义后端故以下仅作前端推荐）
   
-  肥羊： https://sub.v1.mk/
+  - 肥羊： https://sub.v1.mk/
   
-  acl4ssr https://acl4ssr-sub.github.io/
+  - acl4ssr https://acl4ssr-sub.github.io/
   
 **2.远程配置**
 
