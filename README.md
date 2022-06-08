@@ -1,4 +1,4 @@
-# ClashRlue
+# ClashRlue_Backup
 Clash 自用规则备份
 
 **以下教程来自于@cutethotw （抱歉实在不会引用）**
@@ -15,6 +15,9 @@ Clash 自用规则备份
 **2.远程配置**
 
 分流配置，可以选择给定的也可以输入URL自定义分流规则（注意必须是直链才行），自用clash分流规则直链地址:https://raw.githubusercontent.com/PANGPANGDigital/ClashRlue_Backup/main/GeneralClashRule.ini
+  
+  PS.此配置国家节点 检测策略均使用 **fallback模式**
+  
   - 更多选项（右下角）
        
        Emoji 默认开启
