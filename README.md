@@ -18,6 +18,10 @@ Clash 自用规则备份
   
   PS.此配置国家节点 检测策略均使用 **fallback模式**
   
+ **常用引用仓库**
+    ACL4SSR https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
+    blackmatrix7 https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
+  
   - 更多选项（右下角）
        
        Emoji 默认开启
