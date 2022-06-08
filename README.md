@@ -22,17 +22,17 @@ Clash 自用规则备份
  
 - ACL4SSR https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
     
-    - blackmatrix7 https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
+- blackmatrix7 https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
     
 
   
-  - 更多选项（右下角）
+- 更多选项（右下角）
        
-       Emoji 默认开启
+  - Emoji 默认开启
        
-       启动UDP 推荐开启
+  - 启动UDP 推荐开启
       
-       启动TFO 推荐开启
+  - 启动TFO 推荐开启
 
 **3.参考示例**
 
