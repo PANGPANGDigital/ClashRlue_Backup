@@ -1,0 +1,33 @@
+# NAME: BT&PT
+# AUTHOR: PANGPANGDigital
+# REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
+# UPDATED: 2022-06-08 17:56:10
+# DOMAIN-SUFFIX: 24
+# IP-CIDR: 0
+# IP-CIDR6: 0
+# TOTAL: 24
+payload:
+  - DOMAIN-SUFFIX,beitai.pt
+  - DOMAIN-SUFFIX,hdatmos.club
+  - DOMAIN-SUFFIX,dyncdn.me
+  - DOMAIN-SUFFIX,proxyrarbg.org
+  - DOMAIN-SUFFIX,rarbg.bypassed.org
+  - DOMAIN-SUFFIX,rarbg.is
+  - DOMAIN-SUFFIX,rarbg.link
+  - DOMAIN-SUFFIX,rarbg.me
+  - DOMAIN-SUFFIX,rarbg.to
+  - DOMAIN-SUFFIX,rarbg.unblocked.vc
+  - DOMAIN-SUFFIX,rarbgaccess.org
+  - DOMAIN-SUFFIX,rarbgaccessed.org
+  - DOMAIN-SUFFIX,rarbgget.org
+  - DOMAIN-SUFFIX,rarbggo.org
+  - DOMAIN-SUFFIX,rarbgmirror.com
+  - DOMAIN-SUFFIX,rarbgmirror.org
+  - DOMAIN-SUFFIX,rarbgmirror.xyz
+  - DOMAIN-SUFFIX,rarbgproxy.org
+  - DOMAIN-SUFFIX,rarbgprx.org
+  - DOMAIN-SUFFIX,rarbgs.com
+  - DOMAIN-SUFFIX,rarbgto.org
+  - DOMAIN-SUFFIX,rarbgunblock.com
+  - DOMAIN-SUFFIX,rarbgunblock.org
+  - DOMAIN-SUFFIX,rarbgway.org
