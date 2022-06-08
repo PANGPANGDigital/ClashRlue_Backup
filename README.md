@@ -21,3 +21,5 @@ Clash 自用规则备份
        启动TFO 推荐开启
 
 **3.参考示例**
+
+/ClashRlue_Backup/blob/main/肥羊订阅转换.png
