@@ -24,7 +24,9 @@ Clash 自用规则备份
     
 - blackmatrix7 https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
     
+- 排序 分流规则的匹配是按照至上而下收录，匹配到了就停止不再往下，比如YouTube规则要放在国外媒体前面，而完整的国外媒体规则包含了YouTube, Netflix, Pornhub等等，所以分流规则较大要放在YouTube小分流规则后面
 
+- 排序原则 重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则
   
 - 更多选项（右下角）
        
