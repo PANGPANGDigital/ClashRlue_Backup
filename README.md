@@ -20,9 +20,8 @@ Clash 自用规则备份
   
  **分流规则常用引用仓库**
  
-    **ACL4SSR** https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
+    ACL4SSR https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
     
-    **blackmatrix7** https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
   
   - 更多选项（右下角）
        
