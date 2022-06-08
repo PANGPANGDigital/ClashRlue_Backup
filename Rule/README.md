@@ -2,4 +2,4 @@
 
 - 引用规则仓库
 
- - blackmatrix7 https://github.com/blackmatrix7/ios_rule_script
+  - blackmatrix7 https://github.com/blackmatrix7/ios_rule_script
