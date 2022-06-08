@@ -22,4 +22,5 @@ Clash 自用规则备份
 
 **3.参考示例**
 
-/ClashRlue_Backup/blob/main/肥羊订阅转换.png
+![Image text](https://github.com/PANGPANGDigital/ClashRlue_Backup/blob/main/%E8%82%A5%E7%BE%8A%E8%AE%A2%E9%98%85%E8%BD%AC%E6%8D%A2.png
+)
