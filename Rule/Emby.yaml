@@ -8,6 +8,7 @@
 # IP-CIDR6: 0
 # TOTAL: 4
 payload:
-  - DOMAIN-SUFFIX,misakaf.xyz
+  - DOMAIN-SUFFIX,emby.misakaf.xyz
+  - DOMAIN-SUFFIX,embyaz.misakaf.xyz
   - DOMAIN-SUFFIX,embylianmeng.com
   - DOMAIN-SUFFIX,tagemby.embylianmeng.com
