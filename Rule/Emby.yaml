@@ -2,13 +2,11 @@
 # AUTHOR: PANGPANGDigital
 # REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
 # UPDATED: 2022-06-10 21:45:00
-# DOMAIN-SUFFIX: 4
+# DOMAIN-SUFFIX: 2
 # DOMAIN-KEYWORD：0
 # IP-CIDR: 0
 # IP-CIDR6: 0
-# TOTAL: 4
+# TOTAL: 2
 payload:
-  - DOMAIN-SUFFIX,emby.misakaf.xyz
-  - DOMAIN-SUFFIX,embyaz.misakaf.xyz
+  - DOMAIN-SUFFIX,misakaf.xyz
   - DOMAIN-SUFFIX,embylianmeng.com
-  - DOMAIN-SUFFIX,tagemby.embylianmeng.com
