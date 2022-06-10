@@ -2,10 +2,11 @@
 # AUTHOR: PANGPANGDigital
 # REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
 # UPDATED: 2022-06-10 19:51:00
-# DOMAIN-SUFFIX: 24
+# DOMAIN-SUFFIX: 4
+# DOMAIN-KEYWORD：1
 # IP-CIDR: 0
 # IP-CIDR6: 0
-# TOTAL: 24
+# TOTAL: 5
 payload:
   - DOMAIN-SUFFIX,upyunso.com
   - DOMAIN-SUFFIX,ooklaserver.net
