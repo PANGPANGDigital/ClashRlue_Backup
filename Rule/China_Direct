@@ -1,0 +1,14 @@
+# NAME: China_Direct
+# AUTHOR: PANGPANGDigital
+# REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
+# UPDATED: 2022-06-08 17:56:10
+# DOMAIN-SUFFIX: 24
+# IP-CIDR: 0
+# IP-CIDR6: 0
+# TOTAL: 24
+payload:
+  - DOMAIN-SUFFIX,upyunso.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,speed.cloudflare.com
+  - DOMAIN-SUFFIX,speed.dler.io
+  - DOMAIN-KEYWORD,speedtest
