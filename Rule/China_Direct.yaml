@@ -1,12 +1,7 @@
 # NAME: China_Direct
 # AUTHOR: PANGPANGDigital
 # REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
-# UPDATED: 2022-7-30
-# DOMAIN-SUFFIX: 8
-# DOMAIN-KEYWORD：1
-# IP-CIDR: 0
-# IP-CIDR6: 0
-# TOTAL: 9
+# UPDATED: 2022-8-22
 payload:
   - DOMAIN-SUFFIX,upyunso.com
   - DOMAIN-SUFFIX,ooklaserver.net
@@ -16,4 +11,9 @@ payload:
   - DOMAIN-SUFFIX,speedtest.net
   - DOMAIN-SUFFIX,speedtest.cn
   - DOMAIN-SUFFIX,ip138.com
+  - DOMAIN-SUFFIX,checkip.synology.com
+  - DOMAIN-SUFFIX,checkipv6.synology.com
+  - DOMAIN-SUFFIX,checkport.synology.com
+  - DOMAIN-SUFFIX,ddns.synology.com
+  - DOMAIN-SUFFIX,account.synology.com
   - DOMAIN-KEYWORD,speedtest 
