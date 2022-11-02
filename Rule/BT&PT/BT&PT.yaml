@@ -2,16 +2,19 @@
 # AUTHOR: PANGPANGDigital
 # REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
 # UPDATED: 2022-07-30
-# DOMAIN-SUFFIX: 27
-# IP-CIDR: 0
-# IP-CIDR6: 0
-# TOTAL: 27
 payload:
   - DOMAIN-SUFFIX,beitai.pt
   - DOMAIN-SUFFIX,hdatmos.club
   - DOMAIN-SUFFIX,pttime.org
   - DOMAIN-SUFFIX,hdarea.co
   - DOMAIN-SUFFIX,audiences.me
+  - DOMAIN-SUFFIX,pterclub.com
+  - DOMAIN-SUFFIX,hdchina.org
+  - DOMAIN-SUFFIX,hdhome.org
+  - DOMAIN-SUFFIX,hddolby.com
+  - DOMAIN-SUFFIX,hhanclub.top
+  - DOMAIN-SUFFIX,m-team.cc
+  - DOMAIN-SUFFIX,gainbound.net
   - DOMAIN-SUFFIX,dyncdn.me
   - DOMAIN-SUFFIX,proxyrarbg.org
   - DOMAIN-SUFFIX,rarbg.bypassed.org
