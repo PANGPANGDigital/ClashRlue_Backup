@@ -1,0 +1,6 @@
+# NAME: GlobeProxy
+# AUTHOR: PANGPANGDigital
+# REPO: https://github.com/PANGPANGDigital/ClashRlue_Backup
+# UPDATED: 2022-11-13
+payload:
+  - DOMAIN-SUFFIX,googlevideo.com
