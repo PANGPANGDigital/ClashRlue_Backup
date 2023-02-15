@@ -17,3 +17,4 @@ payload:
   - DOMAIN-SUFFIX,ddns.synology.com
   - DOMAIN-SUFFIX,account.synology.com
   - DOMAIN-KEYWORD,speedtest 
+  - DOMAIN-SUFFIX,plex.tv
