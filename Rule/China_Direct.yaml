@@ -16,8 +16,11 @@ payload:
   - DOMAIN-SUFFIX,checkport.synology.com
   - DOMAIN-SUFFIX,ddns.synology.com
   - DOMAIN-SUFFIX,account.synology.com
+  - DOMAIN-SUFFIX,mi.com
   - DOMAIN-KEYWORD,speedtest 
   - DOMAIN-SUFFIX,plex.tv
   - DOMAIN,beta.apple.com
   - DOMAIN,testflight.apple.com
+  - DOMAIN,api.io.mi.com
+  - DOMAIN,api.coolapk.com
   - DOMAIN-KEYWORD,testflight
