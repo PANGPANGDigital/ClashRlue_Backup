@@ -24,3 +24,4 @@ payload:
   - DOMAIN,api.io.mi.com
   - DOMAIN,api.coolapk.com
   - DOMAIN-KEYWORD,testflight
+  - IP-CIDR,193.160.221.116,DIRECT
