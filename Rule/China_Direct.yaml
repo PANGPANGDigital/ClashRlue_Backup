@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,ddns.synology.com
   - DOMAIN-SUFFIX,account.synology.com
   - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,codelab.vip
   - DOMAIN-KEYWORD,speedtest 
   - DOMAIN-SUFFIX,plex.tv
   - DOMAIN,beta.apple.com
