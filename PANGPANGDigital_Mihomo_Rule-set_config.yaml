@@ -1,0 +1,260 @@
+# PANGPANGDigital 自用 Mihomo Rule-set 配置文件
+# 最后更新时间：2025-12-21 12:50
+# url 里填写自己的订阅,名称不能重复
+proxy-providers:
+  provider1:
+    url: "填写订阅链接"
+    type: http
+    interval: 86400
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
+    override:
+      additional-prefix: "[填写机场名字]"
+
+  provider2:
+    url: "填写订阅链接"
+    type: http
+    interval: 86400
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
+    override:
+      additional-prefix: "[填写机场名字]"
+
+
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+unified-delay: false
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+    - "+.push.apple.com"
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+    - "+.market.xiaomi.com"
+  default-nameserver:
+    - tls://223.5.5.5
+    - tls://223.6.6.6
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+proxy-groups:
+
+  - name: 国外流量
+    type: select
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/Tesla.png
+    proxies: [自建节点,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: YouTube
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/youtube(4).png
+    proxies: [国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Paypal
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paypal(2).png
+    proxies: [国外流量,美国节点]
+
+  - name: OpenAI
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ChatGPT-green.png
+    proxies: [国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Telegram
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Telegrampremium.png
+    proxies: [国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Microsoft
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/microsoft.png
+    proxies: [DIRECT,国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Adobe
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobe(1).png
+    proxies:  [REJECT,国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Apple
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/apple.png
+    proxies:  [DIRECT,国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: Steam
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/steam(1).png
+    proxies:  [DIRECT,国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  - name: 国内流量
+    type: select
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/chinese.png
+    proxies:  [DIRECT]
+
+  - name: Final
+    type: select
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/Fries.png
+    proxies:  [DIRECT,国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
+
+  #分隔,下面是地区分组
+  - name: 自建节点
+    type: select
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/Sub.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)DMIT"
+
+  - name: 香港节点
+    type: fallback
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/HK.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)港|hk|hongkong|hong kong"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 台湾节点
+    type: fallback
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/TW.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)台|tw|taiwan"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 日本节点
+    type: fallback
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/JP.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)日|jp|japan"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 美国节点
+    type: fallback
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/US.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)美|us|unitedstates|united states"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 新加坡节点
+    type: fallback
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/SG.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)(新|sg|singapore)"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    
+  - name: 其它地区
+    type: select
+    icon: https://raw.githubusercontent.com/PANGPANGDigital/GoodGoodStudyDayDayUp/main/Surge/icon/images/UN.png
+    include-all: true
+    exclude-type: direct
+    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
+
+
+
+rules:
+  - RULE-SET,private_ip,DIRECT,no-resolve
+  - RULE-SET,youtube_domain,YouTube
+  - RULE-SET,paypal_domain,Paypal
+  - RULE-SET,openai_domain,OpenAI
+  - RULE-SET,telegram_domain,Telegram
+  - RULE-SET,microsoft_domain,Microsoft
+  - RULE-SET,adobe_domain,Adobe
+  - RULE-SET,apple_domain,Apple
+  - RULE-SET,steam_domain,Steam
+  - RULE-SET,cn_domain,国内流量
+  - RULE-SET,geolocation-!cn,国外流量
+
+  - RULE-SET,telegram_ip,Telegram
+  - RULE-SET,cn_ip,国内流量
+  - MATCH,Final
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+rule-providers:
+  private_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+  youtube_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
+  paypal_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"
+  openai_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs"
+  telegram_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"  
+  microsoft_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"
+  adobe_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/adobe.mrs"
+  apple_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"
+  steam_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"
+  geolocation-!cn:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
+
+  private_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
+  cn_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+  telegram_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
