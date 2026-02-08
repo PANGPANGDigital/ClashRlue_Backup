@@ -94,7 +94,7 @@ proxy-groups:
 
   - name: OpenAI
     type: select
-    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ChatGPT-green.png
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
     proxies: [国外流量,香港节点,台湾节点,日本节点,新加坡节点,美国节点,其它地区]
 
   - name: Telegram
