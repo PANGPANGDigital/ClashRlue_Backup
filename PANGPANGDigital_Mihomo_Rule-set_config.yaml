@@ -1,5 +1,5 @@
 # PANGPANGDigital 自用 Mihomo Rule-set 配置文件
-# 最后更新时间：2025-12-21 12:50
+# 最后更新时间：2026-02-13 10:55:35
 # url 里填写自己的订阅,名称不能重复
 proxy-providers:
   provider1:
@@ -204,9 +204,9 @@ rules:
   - RULE-SET,adobe_domain,Adobe
   - RULE-SET,apple_domain,Apple
   - RULE-SET,steam_domain,Steam
+# - DOMAIN-SUFFIX,自行替换_domain,国内流量    #替换需要的参数RULE-SET/DOMAIN-SUFFIX等
   - RULE-SET,cn_domain,国内流量
   - RULE-SET,geolocation-!cn,国外流量
-
   - RULE-SET,telegram_ip,Telegram
   - RULE-SET,cn_ip,国内流量
   - MATCH,Final
